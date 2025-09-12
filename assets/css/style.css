@@ -75,173 +75,56 @@
 /* Below this part is the CSS where I explain the tools I currently use https://www.sekai.gg */
 
 .my-tools {
-    background-color: rgb(0, 0, 0);
+  background-color: #202020;
+  padding: 80px 20px;
+  color: #fff;
 }
-
-.section {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    color: var(--yellow);
-    background-color: #fff;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    unicode-bidi: isolate;
-}
-
 
 .tools-container {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
-    display: flex;
-    position: relative;
-}
-
-.tools-layout {
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.w-tools-container {
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.w-tools-container:before {
-    content: " ";
-    grid-area:  1 / 1 / 2 / 2;
-    display: table;
-}
-
-.h1.text-align-center.uppercase.fade-in-200 {
-    color:#0a1f44;
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.h1.text-align-center {
-    text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .h1 {
-    margin-top: 0;
-    margin-bottom: 100px;
-    font-family: Montserrat, sans-serif;
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 60px;
+  margin: 0 0 60px;
+  font-family: Montserrat, sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
-w-tabs:before {
-    content: " ";
-    grid-area: 1 / 1 / 2 / 2;
+.about-me-tabs-nav {
+  display: flex;
+  justify-content: center;
 }
 
 .about-me-menu-list {
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    object-fit: contain;
-    order: -1;
-    grid-template-rows: auto, auto;
-    grid-auto-columns: 1fr;
-    justify-content: space-between;
-    align-items: flex-start;
-    min-width: auto;
-    min-height: auto;
-    margin-bottom: 100px;
-    display: flex;
-}
-
-.w-tab-menu {
-    position: relative;
-}
-
-.about-me-tabs-item.w--current {
-    background-color: #0000;
-    
-}
-
-.w-tab-link.w--current {
-    background-color: #c8c8c8;
+  display: flex;
+  gap: 40px;
 }
 
 .about-me-tabs-item {
-    background-color: #0000;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 88px;
-    display: flex;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
-.w-tab-link {
-    vertical-align: top;
-    text-align: left;
-    cursor: pointer;
-    color: #222;
-    background-color: #ddd;
-    padding: 9px 30px;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
+.about-me-tabs-item.w--current {
+  border-bottom: 3px solid #fcd707d2;
 }
 
-.w-inline-block {
-    max-width: 100%;
-    display: inline-block;
+.tab-number {
+  color: #fcd707d2;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    background-color: #0000;
-}
-
-.text-lg.font-bold.font-poppins.text-slate-grey.uppercase.tab-number {
-    color: #fcd707d2;
-}
-
-.font-popppins.font-bold {
-    font-weight: 700;
-}
-
-.text-slate-grey {
-    color: #fcd707d2;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.text-lg {
-    font-family: Boi Jamjuree, sans-serif;
-    font-size: 18px;
-    line-height: 28px;
-}
-
-.font-bold {
-    font-weight: 700;
+.tab-head {
+  color: #aaa;
+  font-size: 14px;
+  align-items: center;
 }
