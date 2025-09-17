@@ -16,18 +16,21 @@
 }
 
 .top-bar {
-    position:absolute;
-    top: 0;
+    top: 20px;
     width: 100%;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), transparent);
-    left: 0;
-    right: 0;
-    transition: background-image .3s ease;
-    z-index: 11;
+    z-index: 200;
+    position:absolute;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    
 }
 
 .top-bar a {
-    float: center;
+    flex: center;
     color:rgba(255, 255, 255);
     text-align: center;
     padding: 14px 16px;
@@ -36,23 +39,38 @@
 }
 
 .top-bar a:hover {
-    background-color: aqua;
+    background-color: rgb(255, 202, 57);
     color: black;
 }
 
 
 .about-me-content {
+    top: 20px;
     display:flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(135deg, #0a1f44, #0f2a66);
-    padding: 50px;
-    border-radius: 16px;
+    background: linear-gradient(135deg, #0a1f44, #382804);
+    padding: 15px;
+    position: relative;
     color: #fff;
+    text-align: center;
+}
+
+.about-image {
+  justify-content: center;
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  
 }
 
 .about-text {
+    margin-top: 20px;
+    margin-bottom: 0.5rem;
     max-width: 50%;
+    line-height: 1.2;
+    font-weight: 500;
 }
 
 .about-text h2 {
@@ -67,12 +85,13 @@
 }
 
 .about-image img {
-    max-width: 280px;
-    border-radius: 12px;
+    overflow: hidden;
+    border-radius: 50%;
+    max-width: 250px;
+    width: 250px;
+    height: 200px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, .5);
 }
-
-/* Below this part is the CSS where I explain the tools I currently use https://www.sekai.gg */
 
 .my-tools {
   background-color: #202020;
@@ -128,3 +147,15 @@
   font-size: 14px;
   align-items: center;
 }
+
+.about-me-tab {
+    padding-bottom: 0;
+    display: flex;
+}
+
+.w-tab-content {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
