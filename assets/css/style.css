@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: 'Raleway', sans-serif;
+    
     box-sizing: border-box;
     margin: 0;
 }
@@ -24,9 +24,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-   
-    
 }
 
 .top-bar a {
@@ -36,6 +33,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-bar a:hover {
@@ -66,6 +64,7 @@
 }
 
 .about-text {
+    
     margin-top: 20px;
     margin-bottom: 0.5rem;
     max-width: 50%;
@@ -74,7 +73,9 @@
 }
 
 .about-text h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 2rem;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
@@ -87,16 +88,15 @@
 .about-image img {
     overflow: hidden;
     border-radius: 50%;
-    max-width: 250px;
-    width: 250px;
+    width: 220px;
     height: 200px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, .5);
 }
 
 .my-tools {
+  color: #fff;
   background-color: #202020;
   padding: 80px 20px;
-  color: #fff;
 }
 
 .tools-container {
@@ -137,9 +137,22 @@
 }
 
 .tab-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 40px 0;
   color: #fcd707d2;
   font-size: 18px;
   font-weight: bold;
+}
+
+.tab-content {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 300px;
 }
 
 .tab-head {
@@ -159,3 +172,90 @@
     overflow: hidden;
 }
 
+.project-preview {
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+
+.project-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.bg-gray { 
+    background: #888;
+    top: 20px;
+    left: 20px;
+    filter: blur(2px);
+    z-index: 1;
+}
+
+.bg-orange {
+    background: orange;
+    z-index: 2;
+}
+
+.project-info {
+  flex: 1;
+  color: white;
+  max-width: 600px;
+}
+
+.project-info h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.tech-carousel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.carousel-item {
+  min-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.carousel-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: orange;
+  cursor: pointer;
+}
+
+/* Abaixo daqui é onde coloco informações mais detalhadas sobre mim */
+
+.site-section {
+  padding: 5em 0;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
